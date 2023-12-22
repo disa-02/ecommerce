@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  mysqldb:
+    image: mysql
+    ports:
+      - "3306:3360"
+    environment:
+      - MYSQL_DATABASE=ecommerce
+      - MYSQL_ROOT_PASSWORD=password
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/ecommerce
+    depends_on:
+      - mysqldb
+    links:
+      - mysqldb
+    restart: on-failure:10
