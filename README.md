@@ -13,11 +13,11 @@ Aplicacion realizada con Spring Boot. Aplicacion de venta y compra de productos.
 - 🧾 Se efectúa una orden de compra (almacenada en la base de datos).
 - ❌ Se eliminan los productos comprados de la base de datos.
 - 🔑 Posee autenticación y autorización de usuarios.
--🧑‍🤝‍🧑 Posee roles de usuario: "admin" y "user".
--🥇 El primer usuario creado posee el rol de "admin".
--🧍‍♂️ El resto de usuarios obtiene el rol "user" por defecto.
--👤 El rol "user" puede interactuar únicamente con su propio carrito de compras.
--🛠️ El rol "admin" tiene acceso total y puede modificar cualquier usuario u operación.
+- 🧑‍🤝‍🧑 Posee roles de usuario: "admin" y "user".
+- 🥇 El primer usuario creado posee el rol de "admin".
+- 🧍‍♂️ El resto de usuarios obtiene el rol "user" por defecto.
+- 👤 El rol "user" puede interactuar únicamente con su propio carrito de compras.
+- 🛠️ El rol "admin" tiene acceso total y puede modificar cualquier usuario u operación.
 
 ---
 
